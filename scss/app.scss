@@ -1,0 +1,103 @@
+// 1 - Load project variables.
+// 2 - Load bootstrap sass files.
+// 3 - Load custom app sass files.
+
+// --------------------------------------------------------
+//  Import in the default bootstrap variables.
+//  Then override bootstrap default with project specific values.
+// --------------------------------------------------------
+
+@import "../frameworks/bootstrap4-alpha2/scss/variables";
+@import "variables";
+
+// --------------------------------------------------------
+// Import required bootstrap sass files needed for this project.
+// Uncomment any bootstrap functionality required for this project.
+// The idea is to keep this as small as possible.
+// --------------------------------------------------------*/
+
+/* --------------------------------------------------------
+   Core mixins
+   -------------------------------------------------------- */
+
+@import "../frameworks/bootstrap4-alpha2/scss/mixins";
+
+
+
+/* --------------------------------------------------------
+   Reset and dependencies
+   -------------------------------------------------------- */
+
+@import "../frameworks/bootstrap4-alpha2/scss/normalize";
+@import "../frameworks/bootstrap4-alpha2/scss/print";
+
+
+
+/* --------------------------------------------------------
+   Core CSS
+   -------------------------------------------------------- */
+
+@import "../frameworks/bootstrap4-alpha2/scss/reboot";
+@import "../frameworks/bootstrap4-alpha2/scss/type";
+@import "../frameworks/bootstrap4-alpha2/scss/images";
+@import "../frameworks/bootstrap4-alpha2/scss/code";
+@import "../frameworks/bootstrap4-alpha2/scss/grid";
+@import "../frameworks/bootstrap4-alpha2/scss/tables";
+@import "../frameworks/bootstrap4-alpha2/scss/forms";
+@import "../frameworks/bootstrap4-alpha2/scss/buttons";
+
+
+
+/* --------------------------------------------------------
+   Components
+   -------------------------------------------------------- */
+
+@import "../frameworks/bootstrap4-alpha2/scss/animation";
+@import "../frameworks/bootstrap4-alpha2/scss/dropdown";
+@import "../frameworks/bootstrap4-alpha2/scss/button-group";
+@import "../frameworks/bootstrap4-alpha2/scss/input-group";
+@import "../frameworks/bootstrap4-alpha2/scss/custom-forms";
+@import "../frameworks/bootstrap4-alpha2/scss/nav";
+@import "../frameworks/bootstrap4-alpha2/scss/navbar";
+@import "../frameworks/bootstrap4-alpha2/scss/card";
+@import "../frameworks/bootstrap4-alpha2/scss/breadcrumb";
+@import "../frameworks/bootstrap4-alpha2/scss/pagination";
+@import "../frameworks/bootstrap4-alpha2/scss/pager";
+@import "../frameworks/bootstrap4-alpha2/scss/labels";
+@import "../frameworks/bootstrap4-alpha2/scss/jumbotron";
+@import "../frameworks/bootstrap4-alpha2/scss/alert";
+@import "../frameworks/bootstrap4-alpha2/scss/progress";
+@import "../frameworks/bootstrap4-alpha2/scss/media";
+@import "../frameworks/bootstrap4-alpha2/scss/list-group";
+@import "../frameworks/bootstrap4-alpha2/scss/responsive-embed";
+@import "../frameworks/bootstrap4-alpha2/scss/close";
+
+
+
+/* --------------------------------------------------------
+   Components w/ JavaScript
+   -------------------------------------------------------- */
+
+@import "../frameworks/bootstrap4-alpha2/scss/modal";
+@import "../frameworks/bootstrap4-alpha2/scss/tooltip";
+@import "../frameworks/bootstrap4-alpha2/scss/popover";
+@import "../frameworks/bootstrap4-alpha2/scss/carousel";
+
+
+
+/* --------------------------------------------------------
+   Utility classes
+   -------------------------------------------------------- */
+
+@import "../frameworks/bootstrap4-alpha2/scss/utilities";
+@import "../frameworks/bootstrap4-alpha2/scss/utilities-background";
+@import "../frameworks/bootstrap4-alpha2/scss/utilities-spacing";
+@import "../frameworks/bootstrap4-alpha2/scss/utilities-responsive";
+
+
+
+/* --------------------------------------------------------
+   Custom application specific styles
+   -------------------------------------------------------- */
+
+@import "base";

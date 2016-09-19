@@ -1,0 +1,288 @@
+// Default Colours
+$lincoln-blue:	#022049;
+$light-gray: #f7f7f9;
+
+$default-font-face: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$default-font-color: rgba(0, 0, 0, 0.8);
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#content-container{
+	margin-top: 70px;
+	margin-bottom: 60px;
+}
+.content-box{
+	background-color: $light-gray;
+	padding-top: 7px;
+	padding-bottom: 5px;
+}
+// Navbar Top Styling
+.navbar-expand > ul > li > a{
+	color: rgba(0, 0, 0, 0.5);
+}
+.navbar-expand > ul > li > a > .active{
+	color: rgba(0, 0, 0, 1);
+}
+.navbar-expand > ul > li {
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+.navbar-expand > ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+.navbar-nav .nav-link {
+	display: block;
+	padding-top: .425rem;
+	padding-bottom: .425rem;
+}
+.navbar-expand{
+	background-color:$light-gray;
+}
+// Navbar Bottom Styling
+#navbar-bottom{
+	background-color:$lincoln-blue;
+}
+
+// Home Page index.php styles
+#carousel-example-generic{
+	width:100%;
+	height: 20%;
+}
+.carousel-item{
+	height:inherit;
+}
+.img-fluid, .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+	height:100%;
+}
+#site-description-row{
+	margin-top: 10px;
+}
+#accom-preview-row{
+	margin-top: 10px;
+}
+#site-description-one{
+	min-height:200px;
+}
+#site-description-two{
+	min-height:200px;
+}
+#accom-preview{
+	min-height: 200px;
+}
+#accom-preview img {
+	float: left;
+	margin: 0 20px 0 0;
+}
+#accom-preview p {
+	text-align: justify;
+	text-indent: 2em;
+}
+// Styling for desktop devices (width > 992px)
+@media only screen and (min-width: 992px) {
+	#site-description-one{
+		border-left: 5px solid #FFFFFF;
+		border-right: 5px solid #FFFFFF;
+	}
+	#site-description-two{
+		border-left: 5px solid #FFFFFF;
+		border-right: 5px solid #FFFFFF;
+	}
+	#accom-preview{
+		border-left: 5px solid #FFFFFF;
+		border-right: 5px solid #FFFFFF;
+	}
+}
+
+// Accom Page accom.php Styling
+#see-all-button{
+	width:100%;
+}
+#accom-links-block{
+	margin-top: 5px;
+}
+#accom-links-list {
+	text-align: justify;
+	min-width: 100%;
+	margin:0;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#accom-links-list > li{
+	padding-top: 10px;
+}
+@media only screen and (min-width: 992px) {
+	#accom-links-list {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+}
+#accom-links-list:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+#accom-links-list li {
+	display: inline-block;
+}
+#description-row{
+	min-height: 300px;
+	margin-top: 10px;
+}
+#description-row img{
+	min-height: inherit;
+	border: 1px solid #000000;
+
+}
+#description-container{
+	min-height:inherit;
+}
+#features-row{
+	min-height: 300px;
+	margin-top: 10px;
+}
+#features-container{
+	min-height: inherit;
+}
+#price-container{
+	min-height:inherit;
+}
+#price-row{
+	min-height: 300px;
+	margin-top: 10px;
+}
+#price-container table{
+	height:200px;
+	width:100%;
+}
+#price-container table .thead-inverse th{
+	background-color: $lincoln-blue;
+}
+#buttons-row{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#main-image{
+	max-height: 300px;
+	width:100%;
+}
+
+// POI Styling
+#search-row{
+	margin-bottom: 10px;
+}
+.controls {
+	border: 1px solid transparent;
+	border-radius: 2px 0 0 2px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 32px;
+	outline: none;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#origin-input,
+#destination-input {
+	background-color: #fff;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	padding: 0 11px 0 13px;
+	text-overflow: ellipsis;
+	width: calc(50% - 4px);
+}
+
+#origin-input:focus,
+#destination-input:focus {
+	border-color: #4d90fe;
+}
+
+#mode-selector {
+	color: #fff;
+	background-color: #4d90fe;
+	margin-left: 12px;
+	padding: 5px 11px 0px 11px;
+}
+
+#mode-selector label {
+	font-family: Roboto;
+	font-size: 13px;
+	font-weight: 300;
+}
+
+// Directions, POI & Walkingtour common styles
+#map {
+	height: 400px;
+}
+
+#directions-panel {
+	font-family: $default-font-face;
+	color: $default-font-color;
+	line-height: 30px;
+	padding-left: 10px;
+	padding-top: 10px;
+	margin-top: 10px;
+	background-color: $light-gray;
+	box-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
+
+#directions-panel select, #directions-panel input {
+	font-size: 15px;
+}
+
+#directions-panel select {
+	width: 100%;
+}
+
+#directions-panel i {
+	font-size: 12px;
+}
+
+#directions-panel h3{
+	align-content: center;
+}
+
+#directions-panel {
+	height: 100%;
+	overflow: auto;
+}
+
+#input-panel {
+	background-color: #fff;
+	padding: 5px;
+	border: 1px solid #999;
+	text-align: center;
+	font-family: $default-font-face;
+	color: $default-font-color;
+	font-size: 14px;
+	line-height: 30px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+#input-panel select {
+	width: 100%;
+}
+// Styling for desktop devices (width > 992px)
+@media only screen and (min-width: 992px) {
+	#map-row {
+		height: 680px;
+		overflow: auto;
+	}
+	#map{
+		height:680px;
+	}
+	#directions-panel{
+		border-left: 10px solid #FFFFFF;
+		margin-top: 0px;
+	}
+}
+
+
+
